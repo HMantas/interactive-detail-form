@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 1440px; */
+    height: 100vh;
+    background: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.main_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7.3rem;
+    width: 70%;
+}
+
+.expiration {
+    display: flex;
+}
+
+#cardName {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.left-side {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.left-side__front-card_number {
+    margin-top: 3.5rem;
+    font-size: 29px;
+    letter-spacing: 3px;
+}
+
+.left-side__front-card_name-and-date {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 1.7rem;
+}
+
+.right-side {
+    margin-bottom: 3rem;
+}
+
+.credit-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-top {
+    display: flex;
+    flex-direction: column;
+}
+.form-bottom {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-top_input {
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    /* margin-bottom: 2rem; */
+
+    padding: 15px 0 15px 10px;
+    font-size: 14px;
+    color: hsl(279, 6%, 55%);
+}
+
+.form-bottom_input {
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    /* margin-bottom: 2rem; */
+
+    padding: 15px 0 15px 10px;
+    font-size: 14px;
+    color: hsl(279, 6%, 55%);
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.form-bottom_date {
+    display: flex;
+    flex-direction: column;
+}
+.form-bottom_date-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-bottom_cvc {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-bottom_date div input {
+    width: 4.6rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 1.5rem;
+    background: hsl(278, 68%, 11%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.front-card {
+    background-image: url(./images/bg-card-front.png);
+    width: 447px;
+    height: 245px;
+    padding: 30px;
+    margin-left: -6rem;
+    z-index: 2;
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.back-card {
+    background-image: url(./images/bg-card-back.png);
+    width: 447px;
+    height: 245px;
+    position: relative;
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.back-card p {
+    position: absolute;
+    top: 45%;
+    right: 11%;
+}
+
+.completed-state {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.completed-state h3 {
+    font-size: 25px;
+    letter-spacing: 7px;
+    margin: 1.5rem 0 1rem 0;
+}
+.completed-state p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: hsl(279, 6%, 55%);
+}
+.hidden {
+    display: none;
+}
+
+.error-red {
+    border: 1px solid hsl(0, 100%, 66%);
+}
+
+.name-error, .card-number-error, .expire-date-error, .cvc-error {
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 0 10px 0;
+}
+
+.mb-2rem {
+    margin-bottom: 1rem;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .main {
+        height: 100%;
+        background: #fff;
+    }
+    .main_wrapper {
+        flex-direction: column;
+        margin: 2rem 0 0 0;
+        gap: 2.4rem;
+    }
+    .front-card {
+        margin: -7rem 0 0 -3rem;
+    }
+    .back-card {
+        margin: 0 -3rem 0 0;
+    }
+
+    .left-side {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .back-card {
+        width: 372px;
+        height: 207px;
+        padding: 8px;
+    }
+
+    .left-side__front-card_number {
+        margin-top: 2rem;
+        letter-spacing: 3px;
+        font-weight: 500;
+        font-size: 16.5px;
+}
+
+    .back-card p {
+        position: absolute;
+        top: 43%;
+        right: 14%;
+
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .main {
+        background: url(./images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .front-card {
+        margin-right: -1rem ;
+        margin-top: -6.6rem;
+        width: 287px;
+        height: 166px;
+        padding: 21px;
+    }
+    .back-card {
+        margin-left: 1rem ;
+        width: 287px;
+        height: 166px;
+    }
+
+    .left-side__front-card_name-and-date {
+        font-size: 10px;
+        margin-top: 1rem;
+    } 
+
+    #cardName {
+        font-size: 8px;
+    }
+
+    .front-card img {
+        width: 50px;
+        
+    }
+    .btn {
+        margin-top: 0;
+    }
+
+    .credit-form {
+        width: 326px;
+    }
+
+    .form-bottom_cvc {
+        width: 147px;
+    }
+
+    .btn-completed {
+        margin-top: 3rem;
+    }
+
+    .completed-state {
+        width: 345px;
+    }
+    .completed-state h3 {
+        letter-spacing: 5px;
+        margin: 1.5rem 0 1.3rem 0;
+    }
+}

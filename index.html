@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main">
+
+    <div class="main_wrapper">
+
+      <div class="left-side">
+        <div class="front-card">
+          <img src="./images/card-logo.svg" alt="">
+          <div class="left-side__front-card_number">0000 0000 0000 0000</div>
+          <div class="left-side__front-card_name-and-date">
+            <p id="cardName">JANE APPLESEED</p>
+            <div class="expiration">
+              <p class="expireMonth">00</p><span>/</span><p class="expireYear">00</p>
+            </div>
+          </div>
+        </div>
+        <div class="back-card">
+          <p id="cardCvc">000</p>
+        </div>
+      </div>
+
+      <div class="right-side">
+
+        <div class="completed-state hidden">
+          <div>
+            <img src="./images/icon-complete.svg" alt="completed" />
+          </div>
+          <h3>THANK YOU!</h3>
+          <p>We've added your card details</p>
+          <button class="btn btn-completed">Continue</button>
+        </div>
+          <div class="credit-form">
+              <form id="form" action="">
+    
+              <div class="form-top">
+                <label for="">CARDHOLDER NAME</label>
+                <input class="form-top_input" type="text" value="" id="myName" maxlength="40" placeholder="e.g. Jane Appleseed" required>
+                <div class="name-error mb-2rem"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+      
+                <label for="">CARD NUMBER</label>
+                <input class="form-top_input" type="tel" pattern="\d*" id="myCard" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+                <div class="card-number-error mb-2rem"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+              </div>
+    
+              <div class="form-bottom">
+                <div class="form-bottom_date">
+                  <label for="">EXP. DATE (MM/YY)</label>
+                  <div class="form-bottom_date-container">
+                    <input class="form-bottom_input" type="text" value="" id="myExpireMonth" maxlength="2" placeholder="MM">
+                    <input class="form-bottom_input" type="text" value="" id="myExpireYear" maxlength="2" placeholder="YY">
+                  </div>
+                  <div class="expire-date-error"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+                </div>
+    
+                <div class="form-bottom_cvc">
+                  <label for="">CVC</label>
+                  <input class="form-bottom_input " type="text" value="" id="myCvc" maxlength="3" placeholder="e.g. 123">
+                  <div class="cvc-error"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+                </div>
+              
+              </form>
+            </div>
+            <button type="submit" class="btn btn-confirm">Confirm</button>
+      </div>
+
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://github.com/HMantas">Mantas Lileikis 2023</a>.
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>
