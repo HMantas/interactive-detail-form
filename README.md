@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/HMantas/interactive-detail-form/deployments/activity_log?environment=github-pages)
+- [Solution](https://hmantas.github.io/interactive-detail-form/)
 
 ## Built with
 
