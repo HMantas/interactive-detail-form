@@ -27,7 +27,7 @@ Users should be able to:
 ### Screenshots
 
 ![](./images/screenshots/desktop.png)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](./images/screenshots/mobile.png)
+![](./images/screenshots/mobile.png)
 
 
 ### Links
@@ -45,4 +45,4 @@ Users should be able to:
 ## Author
 
 - Github [Mantas Lileikis](https://github.com/HMantas)
-- Frontend Mentor - [@HMantas](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@HMantas](https://www.frontendmentor.io/profile/HMantas)
